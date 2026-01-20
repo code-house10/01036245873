@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WZTJ64ZB');</script>
+<!-- End Google Tag Manager -->
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفتح ترانس - التميز في نقل الأثاث</title>
+    
+    <!-- Google Fonts: Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons & Styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: '#0f172a',
+                        brand: '#fbbf24', // Golden Amber
+                        accent: '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Cairo', sans-serif; scroll-behavior: smooth; overflow-x: hidden; }
+        
+        /* New Sliding Carousel Effect */
+        .carousel-track {
+            display: flex;
+            transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+        }
+        .carousel-item {
+            min-width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        .carousel-item img {
+            transform: scale(1);
+            transition: transform 8s linear;
+        }
+        .carousel-item.active img {
+            transform: scale(1.15);
+        }
+
+        /* Glassmorphism Floating Banner */
+        .glass-card {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Modal Steps */
+        .modal-step { display: none; }
+        .modal-step.active { display: block; }
+
+        /* Animations */
+        @keyframes pulse-gold {
+            0% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(251, 191, 36, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0); }
+        }
+        .animate-pulse-gold { animation: pulse-gold 2s infinite; }
+
+        .slide-up { animation: slideUp 0.5s ease-out forwards; }
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .testimonial-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-midnight">
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZTJ64ZB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3">
+                <div class="bg-midnight p-2 rounded-xl">
+                    <img src="https://raw.githubusercontent.com/code-house10/logos/refs/heads/main/dream2.png" alt="Logo" class="h-10 brightness-0 invert">
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-2xl font-black text-midnight leading-none"> الفتح <span class="text-brand">ترانس</span></span>
+                    <span class="text-[10px] text-slate-400 font-bold tracking-widest uppercase">Elite Furniture Moving</span>
+                </div>
+            </a>
+            
+            <nav class="hidden lg:flex items-center gap-10 font-bold text-slate-600">
+                <a href="#hero" class="hover:text-brand transition">الرئيسية</a>
+                <a href="#services" class="hover:text-brand transition">خدماتنا</a>
+                <a href="#areas" class="hover:text-brand transition">التغطية</a>
+                <a href="#testimonials" class="hover:text-brand transition">قالوا عنا</a>
+                <a href="#" class="open-call-modal bg-midnight text-white px-8 py-3 rounded-2xl hover:bg-brand hover:text-midnight transition shadow-xl shadow-midnight/10">احجز موعداً</a>
+            </nav>
+
+            <button id="mobile-menu-btn" class="lg:hidden text-2xl"><i class="fas fa-bars-staggered"></i></button>
+        </div>
+    </header>
+
+    <!-- Hero Sliding Carousel -->
+    <section id="hero" class="relative h-[85vh] bg-midnight overflow-hidden">
+        <div id="carousel-track" class="carousel-track h-full">
+            <!-- Slide 1 -->
+            <div class="carousel-item h-full active">
+                <img src="https://raw.githubusercontent.com/code-house10/images/refs/heads/main/1213.jpg" class="absolute inset-0 w-full h-full object-cover opacity-50">
+                <div class="absolute inset-0 bg-gradient-to-t from-midnight via-midnight/20 to-transparent"></div>
+                <div class="relative container mx-auto px-6 h-full flex items-center">
+                    <div class="max-w-3xl space-y-8">
+                        <div class="inline-flex items-center gap-2 bg-brand/20 text-brand px-4 py-2 rounded-full border border-brand/30 font-bold text-sm">
+                            <i class="fas fa-star"></i> المصنف رقم #1 في مصر
+                        </div>
+                        <h1 class="text-6xl lg:text-8xl font-black text-white leading-[1.1]">انقل بذكاء <br><span class="text-brand">احمِ ممتلكاتك</span></h1>
+                        <p class="text-xl text-slate-300 max-w-xl leading-relaxed">نظام تغليف خماسي الطبقات مع أسطول سيارات مجهز بأحدث تكنولوجيا التتبع والأمان لضمان وصول أثاثك دون خدش.</p>
+                        <div class="flex flex-wrap gap-4 pt-4">
+                            <button class="open-call-modal bg-brand hover:bg-white text-midnight font-black px-12 py-5 rounded-2xl transition-all shadow-2xl shadow-brand/20 text-lg">احصل على تسعير فوري</button>
+                            <a href="#services" class="bg-white/10 hover:bg-white/20 backdrop-blur text-white font-bold px-12 py-5 rounded-2xl transition border border-white/10">استكشف خدماتنا</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item h-full">
+                <img src="https://raw.githubusercontent.com/code-house10/images/refs/heads/main/126944711_122190526366863_4346383028104921432_n.jpg" class="absolute inset-0 w-full h-full object-cover opacity-50">
+                <div class="absolute inset-0 bg-gradient-to-t from-midnight via-midnight/20 to-transparent"></div>
+                <div class="relative container mx-auto px-6 h-full flex items-center justify-center text-center">
+                    <div class="max-w-3xl space-y-6">
+                        <h2 class="text-6xl font-black text-white">أوناش هيدروليكية عملاقة</h2>
+                        <p class="text-xl text-slate-300">نصل للأدوار المرتفعة بكل سهولة وأمان تام. لا قلق بعد اليوم من ضيق السلالم.</p>
+                        <button class="open-call-modal bg-brand hover:bg-white text-midnight font-black px-12 py-5 rounded-2xl mx-auto transition-all shadow-2xl shadow-brand/20 text-lg">اطلب الونش الآن</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Dots -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-4 z-20">
+            <button class="nav-dot w-16 h-1 bg-white/20 rounded-full transition-all" data-index="0"></button>
+            <button class="nav-dot w-16 h-1 bg-white/20 rounded-full transition-all" data-index="1"></button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black text-midnight">لماذا تختار <span class="text-brand">الفتح ترانس؟</span></h2>
+                <p class="mt-4 text-lg text-slate-500">نقدم لكم تجربة نقل أثاث لا مثيل لها، مبنية على الخبرة والثقة.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-8 bg-slate-50 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-20 h-20 bg-brand/10 text-brand rounded-2xl flex items-center justify-center text-4xl mx-auto mb-6">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-midnight mb-2">نقل آمن ومضمون</h3>
+                    <p class="text-slate-500 text-sm">نستخدم أفضل مواد التغليف لضمان وصول أثاثك بحالة ممتازة.</p>
+                </div>
+                <div class="text-center p-8 bg-slate-50 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-20 h-20 bg-brand/10 text-brand rounded-2xl flex items-center justify-center text-4xl mx-auto mb-6">
+                        <i class="fas fa-truck-fast"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-midnight mb-2">سرعة في التنفيذ</h3>
+                    <p class="text-slate-500 text-sm">نلتزم بالمواعيد ونقوم بعملية النقل بكفاءة وسرعة.</p>
+                </div>
+                <div class="text-center p-8 bg-slate-50 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-20 h-20 bg-brand/10 text-brand rounded-2xl flex items-center justify-center text-4xl mx-auto mb-6">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-midnight mb-2">أسعار تنافسية</h3>
+                    <p class="text-slate-500 text-sm">نقدم أفضل الأسعار مع الحفاظ على أعلى معايير الجودة.</p>
+                </div>
+                <div class="text-center p-8 bg-slate-50 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-20 h-20 bg-brand/10 text-brand rounded-2xl flex items-center justify-center text-4xl mx-auto mb-6">
+                        <i class="fas fa-users-gear"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-midnight mb-2">فريق عمل متخصص</h3>
+                    <p class="text-slate-500 text-sm">فريقنا مدرب على أعلى مستوى للتعامل مع كافة أنواع الأثاث.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Refined Services -->
+    <section id="services" class="py-24 container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
+            <div>
+                <h2 class="text-5xl font-black mb-6 leading-tight">خدماتنا <br><span class="text-accent underline decoration-brand underline-offset-8">الاحترافية الشاملة</span></h2>
+                <p class="text-slate-500 text-lg">نحن لا ننقل الأثاث فحسب، بل ننقل الذكريات والراحة. فريقنا مدرب على التعامل مع أغلى التحف والأجهزة الحساسة.</p>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-6">
+                <div class="bg-white p-8 rounded-[2rem] shadow-xl shadow-slate-200/50 border border-slate-100 group hover:bg-midnight transition-all duration-500">
+                    <div class="w-16 h-16 bg-brand/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand/20 transition">
+                        <i class="fas fa-box-open text-3xl text-brand group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 group-hover:text-white transition">تغليف فندقي</h3>
+                    <p class="text-slate-400 group-hover:text-slate-300 transition">استخدام بابلز، كرتون، وستريتش بجودة عالمية.</p>
+                </div>
+                <div class="bg-white p-8 rounded-[2rem] shadow-xl shadow-slate-200/50 border border-slate-100 group hover:bg-midnight transition-all duration-500">
+                    <div class="w-16 h-16 bg-brand/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand/20 transition">
+                        <i class="fas fa-user-shield text-3xl text-brand group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 group-hover:text-white transition">تأمين شامل</h3>
+                    <p class="text-slate-400 group-hover:text-slate-300 transition">فريقنا يضمن لك الحماية الكاملة لكل قطعة أثاث.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Dismantling -->
+            <div class="relative group h-[400px] overflow-hidden rounded-[2.5rem] bg-midnight">
+                <img src="https://raw.githubusercontent.com/code-house10/images/refs/heads/main/128427058_109989410964682_5769937243968419869_n.jpg" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-midnight via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-8">
+                    <h4 class="text-2xl font-bold text-white mb-2">فك وتركيب متخصص</h4>
+                    <p class="text-slate-300 text-sm">نجارين وفنيي تكييف محترفين لفك غرف النوم والمطابخ والأجهزة الكهربائية.</p>
+                </div>
+            </div>
+            <!-- Transport -->
+            <div class="relative group h-[400px] overflow-hidden rounded-[2.5rem] bg-midnight">
+                <img src="https://raw.githubusercontent.com/code-house10/images/refs/heads/main/131083753_207713207556735_3587017253538319894_n.jpg" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-midnight via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-8">
+                    <h4 class="text-2xl font-bold text-white mb-2">أسطول سيارات مغلق</h4>
+                    <p class="text-slate-300 text-sm">سيارات مجهزة داخلياً لامتصاص الصدمات وحماية العفش من الأتربة والأمطار.</p>
+                </div>
+            </div>
+            <!-- Storage -->
+            <div class="relative group h-[400px] overflow-hidden rounded-[2.5rem] bg-midnight">
+                <img src="https://raw.githubusercontent.com/code-house10/images/refs/heads/main/128948131_104728608157038_6329061589749272507_n.jpg" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-midnight via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-8">
+                    <h4 class="text-2xl font-bold text-white mb-2">تخزين آمن</h4>
+                    <p class="text-slate-300 text-sm">مستودعات مراقبة بالكاميرات ومؤمنة تماماً لفترات التخزين القصيرة والطويلة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Areas -->
+    <section id="areas" class="py-24 bg-midnight text-white overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20 max-w-3xl mx-auto">
+                <h2 class="text-5xl font-black mb-6">نغطي <span class="text-brand">كافة أنحاء مصر</span></h2>
+                <p class="text-slate-400 text-lg">سواء كنت في قلب القاهرة أو في المحافظات، فريق الفتح ترانس يصلك أينما كنت بأقصى سرعة.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Area 1: Nasr City -->
+                <div class="relative aspect-square rounded-[2rem] overflow-hidden group cursor-pointer">
+                    <img src="https://raw.githubusercontent.com/code-house10/images2/refs/heads/main/122.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <h4 class="text-xl font-bold">مدينة نصر</h4>
+                    </div>
+                </div>
+                <!-- Area 2: Heliopolis -->
+                <div class="relative aspect-square rounded-[2rem] overflow-hidden group cursor-pointer">
+                    <img src="https://raw.githubusercontent.com/code-house10/images/refs/heads/main/1213.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center text-center px-4">
+                        <h4 class="text-xl font-bold">مصر الجديدة</h4>
+                    </div>
+                </div>
+                <!-- Area 3: New Cairo -->
+                <div class="relative aspect-square rounded-[2rem] overflow-hidden group cursor-pointer">
+                    <img src="https://raw.githubusercontent.com/code-house10/images/refs/heads/main/120773070_397978604938443_354909630847704936_n.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center text-center px-4">
+                        <h4 class="text-xl font-bold">التجمع الخامس</h4>
+                    </div>
+                </div>
+                <!-- Area 4: Madinaty & Rehab -->
+                <div class="relative aspect-square rounded-[2rem] overflow-hidden group cursor-pointer">
+                    <img src="https://raw.githubusercontent.com/code-house10/images/refs/heads/main/126944711_122190526366863_4346383028104921432_n.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center text-center px-4">
+                        <h4 class="text-xl font-bold">مدينتي والرحاب</h4>
+                    </div>
+                </div>
+                <!-- Area 5: Sheikh Zayed -->
+                <div class="relative aspect-square rounded-[2rem] overflow-hidden group cursor-pointer">
+                    <img src="https://raw.githubusercontent.com/code-house10/images/refs/heads/main/127531800_196298038698252_8716161209163790471_n.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center text-center px-4">
+                        <h4 class="text-xl font-bold leading-tight">الشيخ زايد وأكتوبر</h4>
+                    </div>
+                </div>
+                <!-- Area 6: Maadi -->
+                <div class="relative aspect-square rounded-[2rem] overflow-hidden group cursor-pointer">
+                    <img src="https://raw.githubusercontent.com/code-house10/images/refs/heads/main/128427058_109989410964682_5769937243968419869_n.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center text-center px-4">
+                        <h4 class="text-xl font-bold">المعادي وحلوان</h4>
+                    </div>
+                </div>
+                <!-- Area 7: Mohandessin -->
+                <div class="relative aspect-square rounded-[2rem] overflow-hidden group cursor-pointer">
+                    <img src="https://raw.githubusercontent.com/code-house10/images/refs/heads/main/131083753_207713207556735_3587017253538319894_n.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center text-center px-4">
+                        <h4 class="text-xl font-bold">المهندسين والدقي</h4>
+                    </div>
+                </div>
+                <!-- Area 8: Other Areas -->
+                <div class="relative aspect-square rounded-[2rem] overflow-hidden group cursor-pointer">
+                    <img src="https://raw.githubusercontent.com/code-house10/images/refs/heads/main/128948131_104728608157038_6329061589749272507_n.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-60">
+                    <div class="absolute inset-0 flex items-center justify-center text-center px-4">
+                        <h4 class="text-xl font-bold">ومناطق أخرى كثيرة</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-slate-50 overflow-hidden">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-black text-center mb-16">ثقة عملائنا هي <span class="text-accent underline">رأس مالنا</span></h2>
+            
+            <div class="relative max-w-4xl mx-auto">
+                <div id="testimonial-slider" class="overflow-hidden">
+                    <div class="testimonial-track flex gap-8">
+                        <!-- Testimonial 1 -->
+                        <div class="min-w-full bg-white p-10 rounded-[2.5rem] shadow-xl border border-slate-100 relative">
+                            <i class="fas fa-quote-right text-6xl text-brand/10 absolute top-8 left-8"></i>
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center text-2xl font-bold text-midnight">أ.م</div>
+                                <div>
+                                    <h4 class="font-bold text-xl">أحمد منصور</h4>
+                                    <p class="text-slate-400 text-sm">نقل منزل - التجمع الخامس</p>
+                                </div>
+                                <div class="mr-auto text-brand">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-slate-600 text-lg leading-relaxed italic">"تجربة رائعة بكل المقاييس. الفريق كان منظماً جداً، وكل قطعة أثاث تم تغليفها بعناية فائقة. الأهم هو الاحترام والالتزام التام بالمواعيد."</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <div class="flex justify-center gap-4 mt-10">
+                    <button class="w-12 h-12 rounded-full border border-midnight/10 hover:bg-midnight hover:text-white transition" id="prev-test"><i class="fas fa-arrow-right"></i></button>
+                    <button class="w-12 h-12 rounded-full border border-midnight/10 hover:bg-midnight hover:text-white transition" id="next-test"><i class="fas fa-arrow-left"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-24 container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+            <div>
+                <h2 class="text-4xl font-black mb-3">نصائح <span class="text-brand">الخبراء</span></h2>
+                <p class="text-slate-500">دليلك الكامل لتجربة نقل خالية من التوتر.</p>
+            </div>
+            <a href="#" class="bg-midnight/5 px-6 py-2 rounded-xl font-bold hover:bg-midnight hover:text-white transition">مشاهدة الكل</a>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <article class="group">
+                <div class="overflow-hidden rounded-[2rem] mb-6 h-64 relative">
+                    <img src="https://raw.githubusercontent.com/code-house10/images2/refs/heads/main/10000729041.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-brand text-midnight text-xs font-bold px-3 py-1 rounded-full">نصائح</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 hover:text-brand cursor-pointer transition">7 خطوات ذهبية قبل وصول شركة النقل</h3>
+                <p class="text-slate-500 text-sm leading-relaxed mb-4">كيف تنظم مقتنياتك الثمينة وتجهز منزلك لاستقبال فريق النقل لضمان سرعة الإنجاز.</p>
+                <a href="#" class="font-bold border-b border-midnight pb-0.5 hover:text-brand hover:border-brand transition">اقرأ المزيد</a>
+            </article>
+
+            <article class="group">
+                <div class="overflow-hidden rounded-[2rem] mb-6 h-64 relative">
+                    <img src="https://raw.githubusercontent.com/code-house10/images/refs/heads/main/127531800_196298038698252_8716161209163790471_n.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-brand text-midnight text-xs font-bold px-3 py-1 rounded-full">تغليف</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 hover:text-brand cursor-pointer transition">دليل حماية الزجاج والتحف أثناء السفر</h3>
+                <p class="text-slate-500 text-sm leading-relaxed mb-4">أسرار التغليف الاحترافي التي نستخدمها في الفتح ترانس للحفاظ على القطع القابلة للكسر.</p>
+                <a href="#" class="font-bold border-b border-midnight pb-0.5 hover:text-brand hover:border-brand transition">اقرأ المزيد</a>
+            </article>
+
+            <article class="group">
+                <div class="overflow-hidden rounded-[2rem] mb-6 h-64 relative">
+                    <img src="https://raw.githubusercontent.com/code-house10/images/refs/heads/main/120773070_397978604938443_354909630847704936_n.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <span class="absolute top-4 right-4 bg-brand text-midnight text-xs font-bold px-3 py-1 rounded-full">الأسعار</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 hover:text-brand cursor-pointer transition">كيف يتم تحديد سعر نقل العفش؟</h3>
+                <p class="text-slate-500 text-sm leading-relaxed mb-4">تعرف على العوامل التي تؤثر في التكلفة لتخطط لميزانيتك بدقة وذكاء.</p>
+                <a href="#" class="font-bold border-b border-midnight pb-0.5 hover:text-brand hover:border-brand transition">اقرأ المزيد</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Professional Footer -->
+    <footer class="bg-midnight text-white pt-24 pb-12">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12 mb-16 border-b border-white/10 pb-16">
+                <!-- Branding -->
+                <div class="space-y-6">
+                    <a href="#" class="flex items-center gap-3">
+                        <div class="bg-white/10 p-2 rounded-xl">
+                            <img src="https://raw.githubusercontent.com/code-house10/logos/refs/heads/main/dream2.png" alt="Logo" class="h-8 brightness-0 invert">
+                        </div>
+                        <span class="text-2xl font-black">الفتح<span class="text-brand">ترانس</span></span>
+                    </a>
+                    <p class="text-slate-400 text-sm leading-relaxed">الشركة الرائدة في حلول النقل واللوجستيات في مصر. خبرة تمتد لأكثر من 10 سنوات في خدمة المنازل والشركات.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand hover:text-midnight transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand hover:text-midnight transition"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/201036245873" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand hover:text-midnight transition"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-brand">روابط سريعة</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="#hero" class="hover:text-white transition">الرئيسية</a></li>
+                        <li><a href="#services" class="hover:text-white transition">خدمات النقل</a></li>
+                        <li><a href="#areas" class="hover:text-white transition">مناطق التغطية</a></li>
+                        <li><a href="#blog" class="hover:text-white transition">مدونة النصائح</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services List -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-brand">خدماتنا</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li>نقل أثاث منزلي</li>
+                        <li>تجهيز المكاتب والشركات</li>
+                        <li>أوناش هيدروليكية</li>
+                        <li>فك وتركيب التكييفات</li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-brand">تواصل معنا</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-slate-400">
+                            <i class="fas fa-phone-alt text-brand"></i>
+                            <span dir="ltr">0100 143 0993</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-400">
+                            <i class="fas fa-envelope text-brand"></i>
+                            <span>info@tibatrans.com</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-400">
+                            <i class="fas fa-clock text-brand"></i>
+                            <span>متاحون على مدار 24 ساعة</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center text-slate-500 text-sm">
+                <p>&copy; 2024 الفتح ترانس. جميع الحقوق محفوظة. صمم بكل حب لخدمة عملائنا.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smart Motivation Banner -->
+    <div id="smart-banner" class="fixed bottom-6 left-6 right-6 lg:left-auto lg:right-12 lg:w-[450px] glass-card text-white p-6 z-[60] rounded-[2.5rem] shadow-2xl border border-white/10 slide-up">
+        <div class="flex items-start gap-5">
+            <div class="bg-brand text-midnight w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 animate-pulse-gold">
+                <i class="fas fa-bolt text-2xl"></i>
+            </div>
+            <div class="flex-grow">
+                <div class="flex justify-between items-start mb-1">
+                    <h4 class="font-black text-xl leading-none">عرض الـ <span class="text-brand">24 ساعة</span>!</h4>
+                    <button id="close-banner" class="text-slate-500 hover:text-white transition"><i class="fas fa-times"></i></button>
+                </div>
+                <p class="text-slate-300 text-sm mb-4 leading-relaxed">احجز نقلتك اليوم واحصل على خدمة "الفك والتركيب" <span class="bg-white/10 px-2 py-0.5 rounded text-white font-bold">مجاناً</span> بالكامل.</p>
+                
+                <div class="flex items-center justify-between bg-white/5 p-3 rounded-2xl mb-5">
+                    <span class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">صلاحية العرض:</span>
+                    <div id="countdown-timer" class="flex gap-3 font-mono text-brand font-black text-lg">
+                        <span id="h">01</span>:<span id="m">59</span>:<span id="s">59</span>
+                    </div>
+                </div>
+
+                <button class="open-call-modal w-full bg-white text-midnight font-black py-4 rounded-xl hover:bg-brand transition-all flex items-center justify-center gap-3 shadow-lg shadow-white/5">
+                    اغتنم الفرصة الآن <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhanced Call Confirmation Modal (Multi-step) -->
+    <div id="call-modal" class="fixed inset-0 bg-midnight/90 backdrop-blur-md z-[100] hidden items-center justify-center p-6">
+        <div class="bg-white rounded-[3rem] p-10 max-w-md w-full text-center shadow-2xl relative animate-slide-up">
+            
+            <!-- Step 1: Verification -->
+            <div id="modal-step-1" class="modal-step active">
+                <div class="w-24 h-24 bg-brand/10 text-brand rounded-full flex items-center justify-center text-5xl mx-auto mb-8">
+                    <i class="fas fa-phone-volume"></i>
+                </div>
+                <h3 class="text-3xl font-black text-midnight mb-4">تأكيد الاتصال</h3>
+                <p class="text-slate-500 mb-10 leading-relaxed text-lg">هل تود التواصل مع خدمة العملاء لبدء عملية النقل الآن؟</p>
+                <div class="flex gap-4">
+                    <button id="step-1-yes" class="flex-1 bg-midnight text-white font-bold py-5 rounded-2xl hover:bg-brand hover:text-midnight transition-all text-xl">نعم، متابعة</button>
+                    <button class="close-modal-trigger text-slate-400 font-bold px-4">إلغاء</button>
+                </div>
+            </div>
+
+            <!-- Step 2: Confirmation -->
+            <div id="modal-step-2" class="modal-step">
+                <div class="w-24 h-24 bg-brand/10 text-brand rounded-full flex items-center justify-center text-5xl mx-auto mb-8">
+                    <i class="fas fa-user-check"></i>
+                </div>
+                <h3 class="text-3xl font-black text-midnight mb-4">شكراً لثقتك</h3>
+                <p class="text-slate-500 mb-10 leading-relaxed text-lg">نحن جاهزون لخدمتك. اضغط على الزر أدناه لتأكيد الاتصال والحصول على الخصم.</p>
+                <button id="step-2-confirm" class="w-full bg-midnight text-white font-bold py-5 rounded-2xl hover:bg-brand hover:text-midnight transition-all text-xl shadow-xl shadow-midnight/20">تأكيد نهائي</button>
+            </div>
+
+            <!-- Step 3: Action (Highlighted Number) -->
+            <div id="modal-step-3" class="modal-step">
+                <div class="w-24 h-24 bg-brand/10 text-brand rounded-full flex items-center justify-center text-5xl mx-auto mb-8">
+                    <i class="fas fa-mobile-alt animate-bounce"></i>
+                </div>
+                <h3 class="text-3xl font-black text-midnight mb-4">اتصل الآن</h3>
+                <p class="text-slate-500 mb-8 leading-relaxed">اضغط على الرقم أدناه لبدء المكالمة فوراً:</p>
+                
+                <a href="tel:01036245873" class="block bg-brand/10 border-2 border-brand text-brand font-black py-6 rounded-3xl text-3xl mb-6 hover:bg-brand hover:text-midnight transition-all shadow-xl shadow-brand/10 tracking-widest" dir="ltr">
+                    01036245873
+                </a>
+                
+                <button class="close-modal-trigger text-slate-400 font-bold py-2 hover:text-midnight transition">إغلاق</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Hero Carousel
+        const track = document.getElementById('carousel-track');
+        const slides = Array.from(track.children);
+        const dots = document.querySelectorAll('.nav-dot');
+        let currentSlideIdx = 0;
+
+        function updateCarousel(index) {
+            track.style.transform = `translateX(${index * 100}%)`;
+            dots.forEach((dot, i) => {
+                dot.style.background = i === index ? '#fbbf24' : 'rgba(255,255,255,0.2)';
+                dot.style.width = i === index ? '4rem' : '1.5rem';
+            });
+            slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+            currentSlideIdx = index;
+        }
+
+        setInterval(() => {
+            let next = (currentSlideIdx + 1) % slides.length;
+            updateCarousel(next);
+        }, 8000);
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => updateCarousel(parseInt(dot.dataset.index)));
+        });
+
+        // Testimonial Slider
+        const tTrack = document.querySelector('.testimonial-track');
+        let tIndex = 0;
+        document.getElementById('next-test').addEventListener('click', () => {
+            tIndex = (tIndex + 1) % tTrack.children.length;
+            tTrack.style.transform = `translateX(${tIndex * 100}%)`;
+        });
+        document.getElementById('prev-test').addEventListener('click', () => {
+            tIndex = (tIndex - 1 + tTrack.children.length) % tTrack.children.length;
+            tTrack.style.transform = `translateX(${tIndex * 100}%)`;
+        });
+
+        // Smart Motivation Timer
+        let totalSeconds = 7200;
+        const hEl = document.getElementById('h'), mEl = document.getElementById('m'), sEl = document.getElementById('s');
+        function startTimer() {
+            setInterval(() => {
+                if (totalSeconds <= 0) return;
+                totalSeconds--;
+                hEl.innerText = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
+                mEl.innerText = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
+                sEl.innerText = String(totalSeconds % 60).padStart(2, '0');
+            }, 1000);
+        }
+
+        // --- Improved Multi-step Modal Logic ---
+        const modal = document.getElementById('call-modal');
+        const openBtns = document.querySelectorAll('.open-call-modal');
+        const closeTriggers = document.querySelectorAll('.close-modal-trigger');
+        const step1 = document.getElementById('modal-step-1');
+        const step2 = document.getElementById('modal-step-2');
+        const step3 = document.getElementById('modal-step-3');
+
+        function showStep(index) {
+            [step1, step2, step3].forEach((step, i) => {
+                step.classList.toggle('active', i === index - 1);
+            });
+        }
+
+        openBtns.forEach(btn => btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            showStep(1);
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }));
+
+        document.getElementById('step-1-yes').addEventListener('click', () => showStep(2));
+        document.getElementById('step-2-confirm').addEventListener('click', () => showStep(3));
+
+        closeTriggers.forEach(btn => btn.addEventListener('click', () => {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }));
+
+        document.getElementById('close-banner').addEventListener('click', () => {
+            document.getElementById('smart-banner').style.transform = 'translateY(100%)';
+            document.getElementById('smart-banner').style.opacity = '0';
+        });
+
+        // Initial setup
+        updateCarousel(0);
+        startTimer();
+    </script>
+</body>
+</html>
