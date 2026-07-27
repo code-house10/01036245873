@@ -88,6 +88,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             display: flex;
             transition: transform 0.5s ease-in-out;
         }
+
+
+        /* Clear Floating Call CTA */
+        .floating-call-cta {
+            background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+            box-shadow: 0 18px 45px rgba(21, 128, 61, 0.38);
+        }
+
+        .floating-call-icon {
+            animation: call-ring 1.6s ease-in-out infinite;
+            transform-origin: center;
+        }
+
+        .floating-call-button {
+            animation: call-glow 2s ease-in-out infinite;
+        }
+
+        @keyframes call-ring {
+            0%, 100% { transform: rotate(0deg) scale(1); }
+            10% { transform: rotate(-14deg) scale(1.08); }
+            20% { transform: rotate(14deg) scale(1.08); }
+            30% { transform: rotate(-10deg) scale(1.05); }
+            40% { transform: rotate(10deg) scale(1.05); }
+            50% { transform: rotate(0deg) scale(1); }
+        }
+
+        @keyframes call-glow {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.35); }
+            50% { box-shadow: 0 0 0 10px rgba(255, 255, 255, 0); }
+        }
+
+        @media (max-width: 640px) {
+            #smart-banner {
+                left: 12px !important;
+                right: 12px !important;
+                bottom: 14px !important;
+                width: auto !important;
+            }
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-midnight">
@@ -223,7 +262,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                     <!-- Added Phone Number -->
                     <a href="#" class="open-call-modal mt-6 block w-full bg-brand/10 group-hover:bg-brand text-brand group-hover:text-midnight font-bold py-3 px-4 rounded-xl text-center transition-all duration-300">
-                        <i class="fas fa-phone-alt ml-2"></i> 01036245873
+                        <i class="fas fa-phone-alt ml-2"></i> 01064870403
                     </a>
                 </div>
                 <div class="bg-white p-8 rounded-[2rem] shadow-xl shadow-slate-200/50 border border-slate-100 group hover:bg-midnight transition-all duration-500">
@@ -235,7 +274,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                     <!-- Added Phone Number -->
                     <a href="#" class="open-call-modal mt-6 block w-full bg-brand/10 group-hover:bg-brand text-brand group-hover:text-midnight font-bold py-3 px-4 rounded-xl text-center transition-all duration-300">
-                        <i class="fas fa-phone-alt ml-2"></i> 01036245873
+                        <i class="fas fa-phone-alt ml-2"></i> 01064870403
                     </a>
                 </div>
             </div>
@@ -252,7 +291,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                     <!-- Added Phone Number -->
                     <a href="#" class="open-call-modal inline-block bg-brand hover:bg-white text-midnight font-bold py-2.5 px-6 rounded-xl transition w-full text-center">
-                        <i class="fas fa-phone-alt ml-2"></i> 01036245873
+                        <i class="fas fa-phone-alt ml-2"></i> 01064870403
                     </a>
                 </div>
             </div>
@@ -266,7 +305,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                     <!-- Added Phone Number -->
                     <a href="#" class="open-call-modal inline-block bg-brand hover:bg-white text-midnight font-bold py-2.5 px-6 rounded-xl transition w-full text-center">
-                        <i class="fas fa-phone-alt ml-2"></i> 01036245873
+                        <i class="fas fa-phone-alt ml-2"></i> 01064870403
                     </a>
                 </div>
             </div>
@@ -280,7 +319,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
                     <!-- Added Phone Number -->
                     <a href="#" class="open-call-modal inline-block bg-brand hover:bg-white text-midnight font-bold py-2.5 px-6 rounded-xl transition w-full text-center">
-                        <i class="fas fa-phone-alt ml-2"></i> 01036245873
+                        <i class="fas fa-phone-alt ml-2"></i> 01064870403
                     </a>
                 </div>
             </div>
@@ -302,7 +341,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
                         <h4 class="text-xl font-bold">مدينة نصر</h4>
                         <a href="#" class="open-call-modal mt-3 bg-brand/90 hover:bg-white text-midnight text-sm font-bold px-4 py-2 rounded-lg transition-all flex items-center gap-2">
-                            <i class="fas fa-phone-alt"></i> 01036245873
+                            <i class="fas fa-phone-alt"></i> 01064870403
                         </a>
                     </div>
                 </div>
@@ -312,7 +351,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
                         <h4 class="text-xl font-bold">مصر الجديدة</h4>
                         <a href="#" class="open-call-modal mt-3 bg-brand/90 hover:bg-white text-midnight text-sm font-bold px-4 py-2 rounded-lg transition-all flex items-center gap-2">
-                            <i class="fas fa-phone-alt"></i> 01036245873
+                            <i class="fas fa-phone-alt"></i> 01064870403
                         </a>
                     </div>
                 </div>
@@ -322,7 +361,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
                         <h4 class="text-xl font-bold">التجمع الخامس</h4>
                         <a href="#" class="open-call-modal mt-3 bg-brand/90 hover:bg-white text-midnight text-sm font-bold px-4 py-2 rounded-lg transition-all flex items-center gap-2">
-                            <i class="fas fa-phone-alt"></i> 01036245873
+                            <i class="fas fa-phone-alt"></i> 01064870403
                         </a>
                     </div>
                 </div>
@@ -332,7 +371,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
                         <h4 class="text-xl font-bold">مدينتي والرحاب</h4>
                         <a href="#" class="open-call-modal mt-3 bg-brand/90 hover:bg-white text-midnight text-sm font-bold px-4 py-2 rounded-lg transition-all flex items-center gap-2">
-                            <i class="fas fa-phone-alt"></i> 01036245873
+                            <i class="fas fa-phone-alt"></i> 01064870403
                         </a>
                     </div>
                 </div>
@@ -342,7 +381,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
                         <h4 class="text-xl font-bold leading-tight">الشيخ زايد وأكتوبر</h4>
                         <a href="#" class="open-call-modal mt-3 bg-brand/90 hover:bg-white text-midnight text-sm font-bold px-4 py-2 rounded-lg transition-all flex items-center gap-2">
-                            <i class="fas fa-phone-alt"></i> 01036245873
+                            <i class="fas fa-phone-alt"></i> 01064870403
                         </a>
                     </div>
                 </div>
@@ -352,7 +391,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
                         <h4 class="text-xl font-bold">المعادي وحلوان</h4>
                         <a href="#" class="open-call-modal mt-3 bg-brand/90 hover:bg-white text-midnight text-sm font-bold px-4 py-2 rounded-lg transition-all flex items-center gap-2">
-                            <i class="fas fa-phone-alt"></i> 01036245873
+                            <i class="fas fa-phone-alt"></i> 01064870403
                         </a>
                     </div>
                 </div>
@@ -362,7 +401,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
                         <h4 class="text-xl font-bold">المهندسين والدقي</h4>
                         <a href="#" class="open-call-modal mt-3 bg-brand/90 hover:bg-white text-midnight text-sm font-bold px-4 py-2 rounded-lg transition-all flex items-center gap-2">
-                            <i class="fas fa-phone-alt"></i> 01036245873
+                            <i class="fas fa-phone-alt"></i> 01064870403
                         </a>
                     </div>
                 </div>
@@ -372,7 +411,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
                         <h4 class="text-xl font-bold">ومناطق أخرى كثيرة</h4>
                         <a href="#" class="open-call-modal mt-3 bg-brand/90 hover:bg-white text-midnight text-sm font-bold px-4 py-2 rounded-lg transition-all flex items-center gap-2">
-                            <i class="fas fa-phone-alt"></i> 01036245873
+                            <i class="fas fa-phone-alt"></i> 01064870403
                         </a>
                     </div>
                 </div>
@@ -436,7 +475,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 
                 <!-- Added Phone Number -->
                 <a href="#" class="open-call-modal mt-6 block w-full bg-slate-100 hover:bg-brand hover:text-midnight text-slate-600 font-bold py-3 rounded-xl text-center transition-all">
-                    <i class="fas fa-phone-alt ml-2"></i> 01036245873
+                    <i class="fas fa-phone-alt ml-2"></i> 01064870403
                 </a>
             </article>
 
@@ -451,7 +490,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 
                 <!-- Added Phone Number -->
                 <a href="#" class="open-call-modal mt-6 block w-full bg-slate-100 hover:bg-brand hover:text-midnight text-slate-600 font-bold py-3 rounded-xl text-center transition-all">
-                    <i class="fas fa-phone-alt ml-2"></i> 01036245873
+                    <i class="fas fa-phone-alt ml-2"></i> 01064870403
                 </a>
             </article>
 
@@ -466,7 +505,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 
                 <!-- Added Phone Number -->
                 <a href="#" class="open-call-modal mt-6 block w-full bg-slate-100 hover:bg-brand hover:text-midnight text-slate-600 font-bold py-3 rounded-xl text-center transition-all">
-                    <i class="fas fa-phone-alt ml-2"></i> 01036245873
+                    <i class="fas fa-phone-alt ml-2"></i> 01064870403
                 </a>
             </article>
         </div>
@@ -488,7 +527,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="flex gap-4">
                         <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand hover:text-midnight transition"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand hover:text-midnight transition"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/201036245873" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand hover:text-midnight transition"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://wa.me/201064870403" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand hover:text-midnight transition"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
 
@@ -520,11 +559,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <ul class="space-y-4">
                         <li class="flex items-center gap-3 text-slate-400">
                             <i class="fas fa-phone-alt text-brand"></i>
-                            <span dir="ltr">01036245873</span>
+                            <span dir="ltr">01064870403</span>
                         </li>
                         <li class="flex items-center gap-3 text-slate-400">
                             <i class="fas fa-envelope text-brand"></i>
-                            <span>01036245873</span>
+                            <span>01064870403</span>
                         </li>
                         <li class="flex items-center gap-3 text-slate-400">
                             <i class="fas fa-clock text-brand"></i>
@@ -540,31 +579,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </footer>
 
-    <!-- Smart Motivation Banner -->
-    <div id="smart-banner" class="fixed bottom-6 left-6 right-6 lg:left-auto lg:right-12 lg:w-[450px] glass-card text-white p-6 z-[60] rounded-[2.5rem] shadow-2xl border border-white/10 slide-up">
-        <div class="flex items-start gap-5">
-            <div class="bg-brand text-midnight w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 animate-pulse-gold">
-                <i class="fas fa-bolt text-2xl"></i>
-            </div>
-            <div class="flex-grow">
-                <div class="flex justify-between items-start mb-1">
-                    <h4 class="font-black text-xl leading-none">عرض الـ <span class="text-brand">24 ساعة</span>!</h4>
-                    <button id="close-banner" class="text-slate-500 hover:text-white transition"><i class="fas fa-times"></i></button>
-                </div>
-                <p class="text-slate-300 text-sm mb-4 leading-relaxed">احجز نقلتك اليوم واحصل على خدمة "الفك والتركيب" <span class="bg-white/10 px-2 py-0.5 rounded text-white font-bold">مجاناً</span> بالكامل.</p>
-                
-                <div class="flex items-center justify-between bg-white/5 p-3 rounded-2xl mb-5">
-                    <span class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">صلاحية العرض:</span>
-                    <div id="countdown-timer" class="flex gap-3 font-mono text-brand font-black text-lg">
-                        <span id="h">01</span>:<span id="m">59</span>:<span id="s">59</span>
-                    </div>
-                </div>
+    <!-- Clear Floating Call Button -->
+    <div id="smart-banner" class="floating-call-cta fixed bottom-6 left-6 lg:left-10 lg:right-auto lg:w-[390px] text-white p-5 z-[60] rounded-[2rem] border border-white/20 slide-up" role="complementary" aria-label="اتصل بخدمة العملاء">
+        <button id="close-banner" type="button" class="absolute top-3 left-3 w-8 h-8 rounded-full bg-black/15 hover:bg-black/30 text-white/80 hover:text-white transition" aria-label="إغلاق زر الاتصال">
+            <i class="fas fa-times"></i>
+        </button>
 
-                <button class="open-call-modal w-full bg-white text-midnight font-black py-4 rounded-xl hover:bg-brand transition-all flex items-center justify-center gap-3 shadow-lg shadow-white/5">
-                    اغتنم الفرصة الآن <i class="fas fa-arrow-left"></i>
-                </button>
+        <div class="flex items-center gap-4 pl-8">
+            <div class="floating-call-icon w-16 h-16 rounded-2xl bg-white text-green-700 flex items-center justify-center shrink-0 shadow-lg">
+                <i class="fas fa-phone-volume text-3xl"></i>
+            </div>
+
+            <div class="flex-grow min-w-0">
+                <div class="inline-flex items-center gap-2 bg-white/15 border border-white/20 px-3 py-1 rounded-full text-xs font-bold mb-2">
+                    <span class="w-2 h-2 bg-green-200 rounded-full animate-pulse"></span>
+                    متاحون الآن على مدار 24 ساعة
+                </div>
+                <h4 class="font-black text-xl leading-snug">اتصل الآن واحصل على السعر فوراً</h4>
+                <p class="text-green-50/90 text-sm mt-1">رد سريع وحجز مباشر بدون انتظار</p>
             </div>
         </div>
+
+        <a href="tel:01064870403" class="floating-call-button mt-4 w-full bg-white text-green-800 font-black py-4 px-5 rounded-2xl hover:bg-brand hover:text-midnight transition-all flex items-center justify-center gap-3 text-lg" dir="ltr" aria-label="اتصل الآن على 01064870403">
+            <i class="fas fa-phone-alt"></i>
+            <span>اتصل الآن</span>
+            <strong class="tracking-wider">01064870403</strong>
+        </a>
     </div>
 
     <!-- Enhanced Call Confirmation Modal (Multi-step) -->
@@ -602,8 +642,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <h3 class="text-3xl font-black text-midnight mb-4">اتصل الآن</h3>
                 <p class="text-slate-500 mb-8 leading-relaxed">اضغط على الرقم أدناه لبدء المكالمة فوراً:</p>
                 
-                <a href="tel:01036245873" class="block bg-brand/10 border-2 border-brand text-brand font-black py-6 rounded-3xl text-3xl mb-6 hover:bg-brand hover:text-midnight transition-all shadow-xl shadow-brand/10 tracking-widest" dir="ltr">
-                    01036245873
+                <a href="tel:01064870403" class="block bg-brand/10 border-2 border-brand text-brand font-black py-6 rounded-3xl text-3xl mb-6 hover:bg-brand hover:text-midnight transition-all shadow-xl shadow-brand/10 tracking-widest" dir="ltr">
+                    01064870403
                 </a>
                 
                 <button class="close-modal-trigger text-slate-400 font-bold py-2 hover:text-midnight transition">إغلاق</button>
@@ -648,19 +688,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             tIndex = (tIndex - 1 + tTrack.children.length) % tTrack.children.length;
             tTrack.style.transform = `translateX(${tIndex * 100}%)`;
         });
-
-        // Smart Motivation Timer
-        let totalSeconds = 7200;
-        const hEl = document.getElementById('h'), mEl = document.getElementById('m'), sEl = document.getElementById('s');
-        function startTimer() {
-            setInterval(() => {
-                if (totalSeconds <= 0) return;
-                totalSeconds--;
-                hEl.innerText = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
-                mEl.innerText = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
-                sEl.innerText = String(totalSeconds % 60).padStart(2, '0');
-            }, 1000);
-        }
 
         // --- Improved Multi-step Modal Logic ---
         const modal = document.getElementById('call-modal');
@@ -707,7 +734,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         // Initial setup
         updateCarousel(0);
-        startTimer();
     </script>
 </body>
 </html>
